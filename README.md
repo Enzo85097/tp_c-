@@ -1,14 +1,6 @@
 # TP noté C++ 2 — Version essentielle
 
-Ce projet implémente **uniquement le minimum obligatoire** demandé :
-- Authentification (login + mot de passe)
-- Gestion des rôles (`ADMIN`, `PROF`, `STUDENT`)
-- Vues différentes selon le rôle
-- Base de données SQL (SQLite)
-- Export texte
-- Import texte des notes (admin/prof)
-
-> Rien d’optionnel n’a été ajouté (pas de chiffrement, pas de multithreading, pas de logs avancés).
+Ce projet a pour but de crée un système de gestion des données étudiantes en C++
 
 ---
 
@@ -110,15 +102,3 @@ cmake --build build
 ```
 
 ---
-
-## 8) Explication simple de la logique (pour l’oral)
-
-1. **J’ouvre la base SQL**.
-2. **Je crée les tables** si absentes.
-3. **Je connecte l’utilisateur** avec login/mot de passe.
-4. **Je lis son rôle** (`ADMIN`/`PROF`/`STUDENT`).
-5. **J’affiche les actions autorisées** selon ce rôle.
-6. **J’exécute les requêtes SQL** (SELECT/UPDATE).
-7. **J’importe/exporte** via fichiers texte.
-
-C’est une version courte, claire, et conforme au minimum demandé.
