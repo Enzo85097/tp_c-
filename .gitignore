@@ -1,0 +1,4 @@
+build/
+*.db
+export.txt
+import.txt
